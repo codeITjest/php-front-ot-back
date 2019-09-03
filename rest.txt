@@ -1,0 +1,55 @@
+in the terminal of vscode where your porject folder is opened type npm init
+
+
+1	//install express  - type on the terminal npm install express nodemon
+
+----------------------------------------------------------------------------------------
+2	PACKAGE.JSON
+----------------------------------------------------------------------------------------
+	{
+  	   "name": "rest",
+  	   "version": "1.0.0",
+  	   "description": "",
+  	   "main": "index.js",
+  	   "scripts": {
+2    		"start": "nodemon app.js"
+  	},
+  	   "author": "",
+  	   "license": "ISC",
+  	   "dependencies": {
+    	      "express": "^4.17.1",
+    	      "nodemon": "^1.19.1"
+  	   }
+	}
+CREATE APP.JS
+=================================================
+----------------------------------------------------------------------------------------
+APP.JS
+----------------------------------------------------------------------------------------
+2	//Import express
+2	const express = require('express');
+
+2	//execute app
+2	const app = express();
+
+5	//import mongoose
+5	const mongoose = require('mongoose');
+
+2	//Create ROUTES
+2	app.get('/', (req,res) => {      
+2	    res.send('We are on home');
+2	});
+
+5	//Connect to DB
+5	mongoose.connect('mongo "mongodb+srv://cluster2-scbip.mongodb.net/test" --username jte1028')    /GO TO TERMINAL AND TYPE npm start
+
+2	//Add listener to the server
+2	app.listen(3000);
+
+ON THE TERMINAL TYPE NPM START go to browser and type localhost:3000 check if it is working 
+=================================================
+
+3	create a database user to mongodb
+
+4	on the terminal type npm install dotenv
+

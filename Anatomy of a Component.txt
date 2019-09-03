@@ -1,0 +1,19 @@
+import {Component, OnInit} from '@angular/core';
+
+//typescript
+@Component({
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit{
+	name: string = 'Jonathan';
+	age: number = 35;
+
+	constructor("services import here"){}
+	ngOnInit(){
+		//runs when component is created
+	}
+}
+
+

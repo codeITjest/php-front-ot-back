@@ -1,0 +1,33 @@
+on your terminal in vscode where you open the folder for your project type npm init
+
+//INSTALL EXPRESS
+type npm install express nodemon
+
+-------------------------------------------------------------------------------------------
+PACKAGE.JSON
+-------------------------------------------------------------------------------------------
+after	"scripts": {
+1    		"start": "nodemon app.js"
+  	},
+
+SAVE AND CLOSE create a new file inside node_modules and call it APP.JS
+==================================================
+-------------------------------------------------------------------------------------------
+APP.JS
+-------------------------------------------------------------------------------------------
+2	//Import express
+2	const express = require('express');
+
+2	//execute the express
+2	const app = express();
+
+2	//create a routes
+2	app.get('/', (req,res) => {
+2	    res.send('We are on Home');
+2	});
+
+2	//listening to the server
+2	app.listen(3000);
+
+type on your terminal npm start
+==================================================

@@ -1,0 +1,28 @@
+go to your folder project right click and gitbash here type npm init
+main: app.js
+
+open the project using text editor
+
+-------------------------------------------------------------------------------------------
+PACKAGE.JSON
+-------------------------------------------------------------------------------------------
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "simple bookstore app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+1  "dependencies":{
+1  	"express": "*",
+1 	"body-parser":"*",
+1  	"mongoose":"*"
+1 },
+  "author": "Jonathan Estacio",
+  "license": "ISC"
+}
+=================================================
+
+GO BACK TO GITBASH and type npm install
+

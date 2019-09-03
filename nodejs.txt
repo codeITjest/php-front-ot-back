@@ -1,0 +1,65 @@
+WHAT IS NODE.JS?
+- Javascript Runtime (NOT a language or a framework)
+- Built on the V* javascript engine (same as Google Chrome)
+- Written in C++
+- Essentially allows us to run JS code on the server
+
+JAVASCRIPT FUNDAMENTALS
+- HTTP (status codes, headers, etc)
+- JSON (datatype)
+- Arrow Functions
+- Promises
+- MVC PAttern
+
+WHY USE NODE?
+- fast, efficient and highly scalable
+- Event drivern, non-blocking I/O model
+- Popular in the industry
+- Same language on the front and back end (JS)
+
+NON-BLOCKING I/O
+- works on a single thread using non-blocking I/O calls
+- supports tens of thousands concurrent connections
+- optimizes throughput and scalability in apps with many I/O operations
+
+NODE'S EVENT LOOP
+- single threaded
+- supports concurrency via events and callbacks
+- Eventemitter class is used to bind events and listeners
+
+BEST TYPES OF PORJECTS FOR NODE
+- REST API and Microservices
+- Real Time Services (chat, Live updates)
+- CRUD Apps - Blogs, Shopping Carts, Social Networks
+- Tools and utilities
+
+
+NPM - NODE PACKAGE MANAGER
+- Install 3rd party packages (frameworks, libraries, tools, etc.)
+- packages get stored in the "node_modules" folder
+- all dependencies are listed in a "package.json" file
+- NPM scripts can be created to run certain tasks such as run a server.
+
+
+npm init - Generates a package.json file
+npm install express - installs a package locally
+npm install -g nodemon - Installs a package globally
+
+
+NODE MODULES
+- Node Core Modules (path, fs, http, etc)
+- 3rd party modules/packages installed via NPM
+- Custom modules (files)
+
+const path = require('path');
+const myFile = require('./myFile');
+
+
+
+
+
+
+
+
+
+

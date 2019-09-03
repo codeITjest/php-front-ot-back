@@ -1,0 +1,48 @@
+create folder name it bookstore inside create app.js then create also folder and name it models then right click inside the bookstore folder
+ then choose git bash here
+INSIDE THE GIT BASH
+npm install -g express // to install express
+npm init
+description: simple bookstore app
+author: Jonathan Estacio
+is this ok yesy
+
+go to sublime then open package.json
+inside the package.json
+
+	
+	{
+  	  "name": "bookstore",
+  	  "version": "1.0.0",
+  	  "description": "simple bookstore app",
+  	  "main": "app.js",
+  	  "scripts": {
+    	     "test": "echo \"Error: no test specified\" && exit 1"
+ 	 },
+1	"dependencies": {
+1	   "express": "*",
+1	   "body-parser": "*",
+1	   "mongoose": "*" 
+1	}, 
+  	"author": "Jonathan Estacio",
+  	"license": "ISC"
+	}
+
+2 go back to gitbash  type npm install
+3 go to sublime and open up app.js
+
+//require express 
+var express = require('express');
+var app = express();
+
+// require body-parser
+var bodyParser = require('body-parser');
+
+//require mongoose
+var mongoose = require('mongoose');
+
+//Connect to mongoose
+mongoose.connect('mongodb://localhost/bookstore');
+
+//database object
+var db = mongoose.connection;

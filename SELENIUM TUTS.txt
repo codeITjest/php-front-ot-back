@@ -1,0 +1,15 @@
+SELENIUM 
+seleniumhq.org
+
+Flexible and Extensive
+Multiple 
+
+4 Components
+Selenium IDE  - a record and playback 
+RC(Remote Control)  - execution with help of JS
+Web Driver - an API used tro send commands directly to the browser
+Grid - a tool to run tests in parallel and distributed executions
+
+
+
+

@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 1<?php\
+1	$path = '/dir1/myfile.php';\
+3	$file = 'file1.txt';\
+\
+1	//return filename\
+1	echo basename($path);\
+\
+1	//return filename without extension\
+1	echo basename($path, '.php');\
+\
+1	//return the directory name from the path\
+1	echo dirname($path);\
+\
+	// check if file exist\
+3	echo file_exist($file); //test the page\
+\
+4	//Get absolute path\
+4	echo realpath($file);\
+\
+5	//Check to see if file\
+5	echo is_file($file);\
+\
+6	//check if file writeable\
+6	echo is_writable($file);\
+\
+7	//check if file readable\
+7	echo is_readable($file);\
+\
+8	//get file size\
+8	\'e9cho filesize($file);\
+\
+9	// Create a directory\
+9	mkdir('testing');\
+\
+10	//delete/remove directory if empty\
+10	rmdir('tsting');/ \
+\
+11	//copy a file\
+11	echo copy('file1.txt', 'file2.txt'); // 1st file we want to copy 2nd file we want to create \
+\
+12	//Rename a file\
+12	rename('file2.txt', 'myfile.txt');\
+\
+13	//delete File\
+13	unlink('myfile.txt');\
+\
+14	//Write string to file\
+14	echo file=put=contents($file, 'Goodbye World'); // check the filesize but if we check the file.txt we can see the change\
+\
+15	// Append instead to replace\
+15	//get then append then put it back\
+15	$current = file=get=contents($file);\
+\
+16	$current .= 'Goodbye World';\
+\
+16	file=put=contents($file, $current);\
+\
+17	//put a file into var handle and we run continuous function\
+17	//open a file for reading\
+17	$handle = fopen($file, 'r'); //read\
+\
+17	$data = fread($handle, filesize($file));\
+17	echo $data;\
+\
+18	//Open file for writing\
+18	$handle = fopen('file2.txt', 'w');\
+18	$txt = 'Jonahtan Estacio';\
+18	fwrite($handle, $txt);\
+19	$txt = 'Steve Smith';\
+19	fwrite($handle, $txt); //reload then go to file2.txt\
+18	fclose($handle);\
+\
+2 creare new file. file1.txt\
+Hello World\
+}
